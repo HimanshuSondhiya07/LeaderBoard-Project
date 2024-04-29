@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeaderBoard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>LeaderBoard</h1>
+    </header>
+    <main>
+        <section class="form-section">
+            <h2>Add New Player</h2>
+            <form class="main_form">
+                <div class="input-group">
+                    <input type="text" name="firstName" placeholder="First Name" required>
+                    <input type="text" name="lastName" placeholder="Last Name" required>
+                </div>
+                <div class="input-group">
+                    <input type="text" name="country" placeholder="Country" required>
+                    <input type="number" name="score" placeholder="Player Score" required>
+                </div>
+                <button type="submit" class="main_form-submit-btn">Add Player</button>
+            </form>
+            <p class="main_error-prompter">All fields are required</p>
+        </section>
+        <section class="leaderboard-section">
+            <h2>Leaderboard</h2>
+            <table class="main_scoreboard">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Country</th>
+                        <th>Score</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Leaderboard rows will be added dynamically here -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
